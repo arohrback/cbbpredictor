@@ -1,0 +1,148 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #c3c3c3;
+}
+
+a {
+  color: #00B7FF;
+}
+
+a:hover {
+  color: #0084cc;
+}
+
+@media(min-width: 1120px) {
+  div.main-wrapper, div.metadata {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+h1.title {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 0 0 11px rgba(153, 153, 153, 1);
+}
+
+div.main-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+div.metadata {
+  text-align: center;
+  font-size: smaller;
+}
+
+div.team-container {
+  flex: 1 1 40%;
+  text-align: center;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 0 13px rgba(153, 153, 153, 0.5);
+}
+
+div.teaminfo {
+  font-size: smaller;
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
+div.score {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: -0.5rem;
+}
+
+div.margin {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+table.teamdata-table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: small;
+  text-align: left;
+}
+
+table.teamdata-table td.data-label {
+  font-weight: bold;
+}
+
+table.teamdata-table td.shim {
+  min-width: 1rem;
+}
+
+p.versus {
+  font-size: 2rem;
+  color: #3c3c3c;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+div.middle {
+  padding: 1em;
+  min-width: 180px;
+  text-align: center;
+}
+
+div.probability {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+select.team-picker {
+  padding: 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+}
+
+div.favorite {
+  color: #090;
+}
+
+div.underdog {
+  color: #C00;
+}
+
+input.site-picker {
+  display: none;
+}
+
+input.site-picker:checked + label {
+  background-color: #00B7FF;
+  color: #000;
+  border-color: #000;
+}
+
+label.site-picker {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+  padding: 0.5em;
+  line-height: 3em;
+  font-size: small;
+  background-color: none;
+  text-transform: uppercase;
+  color: #aaa;
+  border: solid 1px #aaa;
+  border-radius: 8px;
+}
+
+label.site-picker:hover, select.team-picker:hover {
+  background-color: #ccffff;
+}
+
+div.site-select {
+  margin-bottom: 1rem;
+
+}

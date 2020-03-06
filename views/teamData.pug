@@ -1,0 +1,17 @@
+h2=team
+div(class='teaminfo')  #{wl}, #{conf}, Ranked ##{rk}
+div(class='teamdata')
+  table(class='teamdata-table')
+    tbody
+    tr
+      td(class='data-label') Def. Efficiency:
+      td(class='data-value') #{adjD.val}
+      td(class='shim')
+      td(class='data-label') Off. Efficiency:
+      td(class='data-value') #{adjO.val}
+    tr
+      td(class='data-label') Eff. Margin:
+      td(class='data-value') #{adjEM}
+      td(class='shim')
+      td(class='data-label') Tempo:
+      td(class='data-value') #{adjT.val}

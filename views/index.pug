@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1(class='title')= title
+  div(class='main-wrapper')
+    div(class='team-container teamA', id='teamA-container')
+      div(class='site-select teamA')
+        input(class='site-picker', type='radio', name='site-picker', value='a', id='atA')
+        label(class='site-picker', for='atA') Home team
+      select(class='team-picker teamA', id='teamA-picker')
+        include teamlist.pug
+      div(class='team-data teamA', id='teamA-data')
+      div(class='team-prediction teamA', id='teamA-prediction')
+    div(class='middle')
+      div(class='site-select neutral')
+        input(class='site-picker', type='radio', name='site-picker', value='n', checked='checked', id='atNeutral')
+        label(class='site-picker', for='atNeutral') Neutral site
+      p(class='versus') vs.
+    div(class='team-container teamB', id='teamB-container')
+      div(class='site-select teamB')
+        input(class='site-picker', type='radio', name='site-picker', value='b', id='atB')
+        label(class='site-picker', for='atB') Home team
+      select(class='team-picker teamB', id='teamB-picker')
+        include teamlist.pug
+      div(class='team-data teamB', id='teamB-data')
+      div(class='team-prediction teamB', id='teamB-prediction')
+  div(class='metadata')
+    include metadata.pug

@@ -1,0 +1,15 @@
+if prob > 50
+  div(class='score favorite') #{score.toFixed(2)}
+else if prob == 50
+  div(class='score tossup') #{score.toFixed(2)}
+else
+  div(class='score underdog') #{score.toFixed(2)}
+div(class='margin')
+  if margin > 0
+    | (+#{margin.toFixed(2)})
+  else if margin < 0
+    | (#{margin.toFixed(2)})
+div(class='probability')
+  | #{prob}% to win
+div(class='efficiencies')
+  | <strong>AdjO:</strong> #{adjO.toFixed(2)}&nbsp;&nbsp;&nbsp; <strong>AdjD:</strong> #{adjD.toFixed(2)}
